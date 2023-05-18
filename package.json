@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:comp": "pnpm -F @cool-land/components dev",
+    "dev:client": "pnpm -F @cool-land/client dev",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "commit": "cz"
