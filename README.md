@@ -16,8 +16,14 @@ pnpm i
 pnpm run dev:client
 ```
 
+### 服务端
+
+```bash
+pnpm run dev:server
+```
+
 ### 组件库
 
 ```bash
-pnpm run dev:components
+pnpm run dev:comp
 ```
