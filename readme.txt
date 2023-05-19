@@ -6,3 +6,4 @@ Creating a new branch is quick.
 111
 Creating a new branch is quick & simple.
 git stash 22222
+push dev to origin/dev
