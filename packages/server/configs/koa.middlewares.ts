@@ -4,9 +4,7 @@ import bodyParser from "koa-bodyparser";
 import { isProd } from "@cool-land/utils";
 
 export const useMiddlewares = <T extends Koa>(app: T): T => {
-  if (isProd()) {
-    app.use(logger());
-  }
+  app.use(logger());
 
   app.use(bodyParser());
 

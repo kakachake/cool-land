@@ -2,6 +2,7 @@ import { RouterProvider } from "react-router-dom";
 import { router } from "./router";
 import { Provider } from "react-redux";
 import { store } from "./store";
+import "./service/index";
 
 function App() {
   return (
