@@ -10,7 +10,7 @@ export default function Home() {
   const counter = useAppSelector((state) => state.basic.value);
   const dispatch = useAppDispatch();
 
-  const { data, error, loading } = useRequest(testApi, {});
+  const { data, loading } = useRequest(testApi, {});
 
   return (
     <div className={styles.container}>

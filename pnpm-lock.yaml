@@ -10,6 +10,7 @@ importers:
       '@typescript-eslint/parser': ^5.59.6
       commitizen: ^4.3.0
       cz-conventional-changelog: ^3.3.0
+      cz-conventional-changelog-zh: ^0.0.2
       eslint: ^8.40.0
       eslint-config-prettier: ^8.8.0
       eslint-plugin-prettier: ^4.2.1
@@ -31,6 +32,7 @@ importers:
       '@typescript-eslint/parser': 5.59.6_3qfatcekpgbllh6uk5ivyhkbxq
       commitizen: 4.3.0
       cz-conventional-changelog: 3.3.0
+      cz-conventional-changelog-zh: 0.0.2
       eslint: 8.40.0
       eslint-config-prettier: 8.8.0_eslint@8.40.0
       eslint-plugin-prettier: 4.2.1_mnhdxnhvwtt24ndv5d2pwtkrna
@@ -4994,6 +4996,24 @@ packages:
     resolution: {integrity: sha512-NJGVKPS81XejHcLhaLJS7plab0fK3slPh11mESeeDq2W4ZI5kUKK/LRRdVDvjJseojbPB7ZwjnyOybg3Igea/A==}
     dev: true
 
+  /cz-conventional-changelog-zh/0.0.2:
+    resolution: {integrity: sha512-rXy2HiG/0M7xChuodAN1L9qHDWTBInGTljaE59AlyqrXQAv0srg147vjep5CO7mGtxVYJQJi9TVP5KVZMWxDqQ==}
+    engines: {node: '>= 10'}
+    dependencies:
+      chalk: 2.4.2
+      commitizen: 4.3.0
+      conventional-commit-types: 3.0.0
+      lodash.assign: 4.2.0
+      lodash.map: 4.6.0
+      longest: 2.0.1
+      word-wrap: 1.2.3
+    optionalDependencies:
+      '@commitlint/load': 17.5.0
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+    dev: true
+
   /cz-conventional-changelog/3.3.0:
     resolution: {integrity: sha512-U466fIzU5U22eES5lTNiNbZ+d8dfcHcssH4o7QsdWaCcRs/feIPCxKYSWkYBNs5mny7MvEfwpTLWjvbm94hecw==}
     engines: {node: '>= 10'}
@@ -8469,6 +8489,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-locate: 5.0.0
+    dev: true
+
+  /lodash.assign/4.2.0:
+    resolution: {integrity: sha512-hFuH8TY+Yji7Eja3mGiuAxBqLagejScbG8GbG0j6o9vzn0YL14My+ktnqtZgFTosKymC9/44wP6s7xyuLfnClw==}
     dev: true
 
   /lodash.camelcase/4.3.0:
