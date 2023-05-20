@@ -7,6 +7,7 @@
     "dev:comp": "pnpm -F @cool-land/components dev",
     "dev:client": "pnpm -F @cool-land/client dev",
     "dev:server": "pnpm -F @cool-land/server dev:watch",
+    "build:client": "pnpm -F @cool-land/client build",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "commit": "cz"
@@ -25,6 +26,7 @@
     "@typescript-eslint/parser": "^5.59.6",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
+    "cz-conventional-changelog-zh": "^0.0.2",
     "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -43,7 +45,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-conventional-changelog-zh"
     }
   }
 }

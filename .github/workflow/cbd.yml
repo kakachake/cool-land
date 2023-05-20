@@ -1,0 +1,19 @@
+name: CBD
+on:
+  push:
+    branches:
+      - main
+jobs:
+  cbd:
+    name: client cbd
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: pnpm && pnpm run deploy
+      - name: DeployGP
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./packages/client/dist
