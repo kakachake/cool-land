@@ -30,6 +30,6 @@ export const router = createHashRouter(
     },
   ],
   {
-    basename: import.meta.env.BASE_URL.replace(/\/$/, ""),
+    // basename: import.meta.env.BASE_URL.replace(/\/$/, ""),
   },
 );
