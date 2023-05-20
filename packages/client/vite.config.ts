@@ -12,7 +12,6 @@ export default defineConfig(({ mode }) => {
         "@": "/src",
       },
     },
-
     server: {
       proxy: {
         "/apis": {
