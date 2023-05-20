@@ -1,6 +1,10 @@
 import NotFount from "@/pages/404";
 import React from "react";
-import { createHashRouter, Navigate } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createHashRouter,
+  Navigate,
+} from "react-router-dom";
 const Home = React.lazy(() => import("@/pages/Home"));
 const BasicLayout = React.lazy(() => import("@/layout/BasicLayout"));
 
@@ -26,6 +30,6 @@ export const router = createHashRouter(
     },
   ],
   {
-    basename: import.meta.env.BASE_URL,
+    basename: import.meta.env.BASE_URL.replace(/\/$/, ""),
   },
 );

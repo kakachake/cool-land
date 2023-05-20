@@ -12,6 +12,7 @@ export default defineConfig(({ mode }) => {
         "@": "/src",
       },
     },
+    base: env.VITE_BASE_URL,
     server: {
       proxy: {
         "/apis": {
