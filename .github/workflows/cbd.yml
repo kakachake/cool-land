@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 jobs:
   cbd:
     name: client cbd
@@ -25,7 +22,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
       - name: Build
-        run: pnpm && pnpm run deploy
+        run: pnpm && pnpm run build:client
       - name: DeployGP
         uses: peaceiris/actions-gh-pages@v3
         with:
